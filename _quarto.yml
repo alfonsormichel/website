@@ -5,39 +5,39 @@ project:
     - python xlsx_to_yml.py  # Automatically generate publications.yml from publications.xlsx
     
 # Meta
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+description-meta: "Sitio web académico del Dr. Alfonso Ramos-Michel"
+author-meta: "Dr. Alfonso Ramos-Michel"
 
 website:
-  title: "Quarto Academic"
-  image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  title: "Dr. Alfonso Ramos-Michel"
+  image: "files/images/perfil.png"
+  description: "Sitio web académico del Dr. Alfonso Ramos-Michel."
  
   navbar:
     background: light  # You can change the background color here
 
     left:   # You can comment out all navigation items here if you just like to keep the index page only
-#      - text: Home
-#        href: index.qmd
-      - text: About
+      - text: Home
+        href: index.qmd
+      - text: Acerca de mí
         menu:
-          - text: News
+          - text: Noticias
             href: posts.qmd#category=news
-          - text: Events
+          - text: Eventos
             href: posts.qmd#category=event      
-          - text: Contact
+          - text: Contacto
             href: contact.qmd             
-      - text: Research
+      - text: Publicaciones
         menu:
-          - text: Publications Listing  # Automatically generated from publications.xlsx
+          - text: Listado completo  # Automatically generated from publications.xlsx
             href: pub-listing.qmd
-          - text: Publications  # Manually curated list of publications
+          - text: Seleccionadas  # Manually curated list of publications
             href: publications.qmd            
           - text: Selected Papers
             href: posts.qmd#category=paper
-          - text: Grants
+          - text: Algoritmos
             href: projects.qmd                                
-      - text: Teaching # Comment the Teaching part out to remove the Teaching page
+      - text: Docencia # Comment the Teaching part out to remove the Teaching page
         href: teaching.qmd
       - text: Outreach
         menu:        
@@ -50,30 +50,36 @@ website:
       - text: CV
         href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://github.com/alfonsormichel
         target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
-      - icon: rss
-        href: posts.xml
+      - text: Google Scholar
+        href: https://scholar.google.com/citations?user=0g1k5xEAAAAJ&hl=en
         target: _blank
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/alfonsormichel/
+        target: _blank
+      # - text: "{{< fa brands bluesky >}}"
+      #   href: https://bsky.app
+      #   target: _blank      
+      # - icon: rss
+      #   href: posts.xml
+      #   target: _blank
   
   page-navigation: true
   
   page-footer: 
-    left: "[Your Name](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
+    left: "Alfonso Ramos-Michel &copy; <script>document.write(new Date().getFullYear())</script>" 
+    center: "Hecho con [Quarto](https://quarto.org)"
     right:  
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://github.com/alfonsormichel
         target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
-        target: _blank
-      - icon: rss
-        href: posts.xml
-        target: _blank  
+      # - text: "{{< fa brands bluesky >}}" 
+      #   href: https://bsky.app
+      #   target: _blank
+      # - icon: rss
+      #   href: posts.xml
+      #   target: _blank  
   
   search:
     location: navbar
@@ -83,7 +89,7 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/drganghe/quarto-academic-website-template
+  repo-url: https://github.com/alfonsormichel/website
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
@@ -91,7 +97,7 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
+  site-url: "https://alfonsormichel.github.io/website/"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
@@ -112,6 +118,6 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
+    link-external-filter: '^(?:http:|https:)\/\/alfonsormichel\.github\.io\/website'
     include-in-header: "files/includes/_academic.qmd"
 
