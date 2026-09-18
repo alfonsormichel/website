@@ -86,9 +86,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-section','listing-authors','listing-year','listing-date','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-preprint','listing-shareit','listing-github','listing-data','listing-highlycited','listing-hotpaper','listing-awards','listing-mediacoverage','listing-invitedpresentation','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-section','listing-authors','listing-year','listing-date','listing-title','listing-journal','listing-volume','listing-pages','listing-doi','listing-hotpaper',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-section","listing-authors","listing-year","listing-date","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-preprint","listing-shareit","listing-github","listing-data","listing-highlycited","listing-hotpaper","listing-awards","listing-mediacoverage","listing-invitedpresentation","listing-categories"],
+      searchColumns: ["listing-section","listing-authors","listing-year","listing-date","listing-title","listing-journal","listing-volume","listing-pages","listing-doi","listing-hotpaper"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -350,7 +350,7 @@ window.Quarto = {
   <li><a href="#peer-reviewed-journal-papers" id="toc-peer-reviewed-journal-papers" class="nav-link" data-scroll-target="#peer-reviewed-journal-papers">Peer-reviewed Journal Papers</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="MjAyMA==">2020 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="MjAyMg==">2022 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXdhcmQ=">award <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2hpbmE=">china <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VybWFueQ==">germany <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlnaGx5LWNpdGVk">highly-cited <span class="quarto-category-count">(2)</span></div><div class="category" data-category="aG90LXBhcGVy">hot-paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmF0dXJlLXNlcmllcw==">nature-series <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cGVlci1yZXZpZXdlZA==">peer-reviewed <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cG93ZXItc3lzdGVt">power-system <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VsZWN0ZWQ=">selected <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c29sYXI=">solar <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c3RvcmFnZQ==">storage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3VwcGx5LWNoYWlu">supply-chain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3dpdGNoLWNoaW5h">switch-china <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dW5pdGVkLXN0YXRlcw==">united-states <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2luZA==">wind <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="MjAyMA==">2020 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="aGlnaGx5LWNpdGVk">highly-cited <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmF0dXJlLXNlcmllcw==">nature-series <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGVlci1yZXZpZXdlZA==">peer-reviewed <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cG93ZXItc3lzdGVt">power-system <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VsZWN0ZWQ=">selected <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29sYXI=">solar <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3RvcmFnZQ==">storage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c3dpdGNoLWNoaW5h">switch-china <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d2luZA==">wind <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -391,59 +391,16 @@ https://badge.dimensions.ai/
 <h2 class="anchored" data-anchor-id="selected-work">Selected Work</h2>
 <div id="listing-selected-work" class="quarto-listing quarto-listing-container-custom">
 <div class="pub-listing list">
-<div class="pub-item" data-index="0" data-categories="MjAyMiUyQ3NlbGVjdGVkJTJDcGVlci1yZXZpZXdlZCUyQ2F3YXJkJTJDaGlnaGx5LWNpdGVkJTJDaG90LXBhcGVyJTJDbmF0dXJlLXNlcmllcyUyQ3N1cHBseS1jaGFpbiUyQ3NvbGFyJTJDdW5pdGVkLXN0YXRlcyUyQ2NoaW5hJTJDZ2VybWFueQ==" data-listing-date-sort="1666764000000">
-<p><span class="listing-title d-none">Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains</span> <span class="listing-author d-none">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span> <span class="listing-date d-none">Oct 26, 2022</span></p>
+<div class="pub-item" data-index="0" data-listing-date-sort="1585375200000">
+<p><span class="listing-title d-none">A Survey on Image Processing for Hyperspectral and Remote Sensing Images</span> <span class="listing-author d-none">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span> <span class="listing-date d-none">Mar 28, 2020</span></p>
 <div class="listing-categories d-none">
-<pre><code>&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('MjAyMg=='); return false;"&gt;2022&lt;/span&gt;
 
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c2VsZWN0ZWQ='); return false;"&gt;selected&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('cGVlci1yZXZpZXdlZA=='); return false;"&gt;peer-reviewed&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('YXdhcmQ='); return false;"&gt;award&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aGlnaGx5LWNpdGVk'); return false;"&gt;highly-cited&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('aG90LXBhcGVy'); return false;"&gt;hot-paper&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('bmF0dXJlLXNlcmllcw=='); return false;"&gt;nature-series&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c3VwcGx5LWNoYWlu'); return false;"&gt;supply-chain&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('c29sYXI='); return false;"&gt;solar&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('dW5pdGVkLXN0YXRlcw=='); return false;"&gt;united-states&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('Y2hpbmE='); return false;"&gt;china&lt;/span&gt;
-
-&lt;span class="listing-category"
-      onclick="window.quartoListingCategory('Z2VybWFueQ=='); return false;"&gt;germany&lt;/span&gt;</code></pre>
 </div>
 <p class="pub-citation">
-<span class="pub-authors">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span>. <span class="pub-year">2022</span>. <a href="https://drganghe.github.io/posts/2022-10-nature-cost-savings-of-global-solar-pv-value-chains/index.html" class="pub-title">Quantifying the Cost Savings of Global Solar Photovoltaic Supply Chains</a>. <em class="pub-journal">Nature</em> 612: 83-87. doi: <a href="https://doi.org/10.1038/s41586-022-05316-6" target="_blank" rel="noopener" class="pub-doi">10.1038/s41586-022-05316-6</a>. <img src="https://drganghe.github.io/files/images/highly-cited-paper-badge.png" title="ESI Highly Cited Paper" alt="Highly cited paper" width="20" style="vertical-align:middle;"> <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" alt="Hot paper" width="20" style="vertical-align:middle;">
+<span class="pub-authors">Helveston, John, <strong>Gang He</strong>*, and Michael Davidson</span>. <span class="pub-year">2022</span>. <a href="https://link.springer.com/chapter/10.1007/978-3-030-40977-7_2" class="pub-title">A Survey on Image Processing for Hyperspectral and Remote Sensing Images</a>. <em class="pub-journal">Springer, Cham</em> 890: 27-51. doi: <a href="https://doi.org/https://doi.org/10.1007/978-3-030-40977-7_2" target="_blank" rel="noopener" class="pub-doi">https://doi.org/10.1007/978-3-030-40977-7_2</a>. <img src="https://drganghe.github.io/files/images/hot-paper-badge.png" title="ESI Hot Paper" alt="Hot paper" width="20" style="vertical-align:middle;">
 </p>
 <p class="pub-links">
-<a href="https://drganghe.github.io/files/papers/2022-nature-solar-supply-chains-preprint.pdf" class="pub-btn btn-preprint" target="_blank" rel="noopener"><i class="bi bi-file-earmark-text"></i> Preprint</a> <a href="https://rdcu.be/enuBz" class="pub-btn btn-shareit" target="_blank" rel="noopener"><i class="bi bi-share"></i> SharedIt</a> <a href="https://github.com/jhelvy/solar-learning-2021" class="pub-btn btn-github" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a> <a href="https://doi.org/10.5281/zenodo.6989075" class="pub-btn btn-data" target="_blank" rel="noopener"><i class="bi bi-database"></i> Data</a> <span class="__dimensions_badge_embed__" data-doi="10.1038/s41586-022-05316-6" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="10.1038/s41586-022-05316-6" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
-</p>
-<p class="pub-awards">
-<span class="pub-label"><i class="bi bi-trophy"></i> Award:</span> <a href="https://drganghe.github.io/posts/2022-12-iamc-2022-best-poster-award/index.html">IAMC2022 Best Poster Award</a>
-</p>
-<p class="pub-coverage">
-<span class="pub-label">Coverage:</span> <a href="https://news.stonybrook.edu/environmental-stewardship/international-collaboration-is-key-to-addressing-global-climate-change/">SBU News</a> | <a href="https://mediarelations.gwu.edu/global-collaboration-saved-countries-67-billion-solar-panel-production-costs">GWU News</a> | <a href="https://today.ucsd.edu/story/open-trade-saves-countries-billions-in-solar-panel-production">UCSD News</a> | <a href="https://web.archive.org/web/20230603073317/https://www.natureasia.com/en/research/highlight/14262"><em>Nature</em> Research Highlights</a> | <a href="https://www.eenews.net/articles/how-bidens-made-in-america-solar-strategy-may-backfire/"><em>E&amp;E News</em></a> | <a href="https://foreignpolicy.com/2023/09/21/us-china-climate-cooperation-trade-ira-green-technology/"><em>Foreign Policy</em></a> | <a href="https://web.archive.org/web/20240106093827/https://themessenger.com/grid/the-us-is-reducing-its-reliance-on-china-for-green-technology-could-that-slow-progress-on-climate-change">GRID News</a> | <a href="https://pv-magazine-usa.com/2022/10/26/a-globalized-supply-chain-is-key-to-cutting-costs-in-solar-module-manufacturing/">PV Magazine</a> | <a href="https://dot.la/deglobalization-2658510850.html">dot.LA</a> | <a href="https://pvbuzz.com/new-study-quantifies-cost-savings-solar-industry-globalized-supply-chains/">pvbuzz</a> | <a href="https://www.innovateli.com/no-736-on-immigrants-solar-energy-supplies-and-other-american-strengths-with-lots-of-candy-to-share/">InnovateLongIsland</a> | <a href="https://mercomindia.com/imposing-import-tariffs-hamper-of-solar-energy-study/">Mercom India</a> | <a href="https://www.chinanews.com.cn/cj/2022/10-27/9881042.shtml">China News</a> | <a href="http://www.stdaily.com/index/kejixinwen/202210/e38ea5c3a3054d87a43996d39a2924ab.shtml">Science and Technology Daily</a>
-</p>
-<p class="pub-presentations">
-<span class="pub-label">Invited presentation:</span> <a href="https://cese.pku.edu.cn/images/content/2024-03/20240325151929637875.png">Peking University</a> | <a href="https://mp.weixin.qq.com/s/c_Z0RHwzkjziq-QvdUzs-g">Tsinghua University</a> | <a href="https://www.belfercenter.org/event/energy-policy-seminar-michael-davidson-decoupling-china-clean-tech">Harvard University</a> (M.D.) | ITIF (J.H.) | <a href="https://mp.weixin.qq.com/s/teDhroPPbaA6z1pVU2JrwA">Climate Change Economics Forum</a>
+<span class="__dimensions_badge_embed__" data-doi="https://doi.org/10.1007/978-3-030-40977-7_2" data-style="large_rectangle" data-hide-zero-citations="true" style="display:inline-flex;vertical-align:middle;"></span> <span class="altmetric-embed" data-doi="https://doi.org/10.1007/978-3-030-40977-7_2" data-badge-type="1" data-badge-popover="right" data-hide-no-mentions="true" style="display:inline-flex;vertical-align:middle;"></span>
 </p>
 <hr class="pub-divider">
 </div>
