@@ -55,9 +55,9 @@ website:
       - text: Google Scholar
         href: https://scholar.google.com/citations?hl=es&user=cvrQG30AAAAJ&view_op=list_works&sortby=pubdate
         target: _blank
-      - text: LinkedIn
-        href: https://www.linkedin.com/in/alfonsormichel/
-        target: _blank
+      # - text: LinkedIn
+      #   href: https://www.linkedin.com/in/alfonsormichel/
+      #   target: _blank
       # - text: "{{< fa brands bluesky >}}"
       #   href: https://bsky.app
       #   target: _blank      
